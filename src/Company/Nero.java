@@ -1,13 +1,10 @@
 package Company;
 
-public class Nero extends ISales implements ICompany{
+public class Nero implements ICoffeSaller {
 
-
-    @Override
-    public void applyCampaign(Company company) {
-    }
 
     @Override
     public void sell(Customer customer) {
+
     }
 }

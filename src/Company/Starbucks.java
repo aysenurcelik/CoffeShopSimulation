@@ -1,16 +1,21 @@
 package Company;
 
-public class Starbucks extends ISales implements ICompany {
+public class Starbucks implements ICoffeSaller,ICampaignIntegration,IConfirmation {
     private int star;
+    private Campaign campaign;
+    private Customer customer;
 
 
     @Override
-    public void sell(Customer customer) {}
+    public void sell(Customer customer) { }
 
     @Override
-    public void applyCampaign(Company company) {
-        System.out.println("Yıldız Kazandınız");
+    public void applyPointCampaign(Customer customer) {
+
     }
 
-
+    @Override
+    public void correct(Customer customer) {
+        System.out.println("Edevlet ile onaylandı");
+    }
 }

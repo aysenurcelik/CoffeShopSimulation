@@ -4,6 +4,11 @@ public class Customer {
     private String customerName;
     private String  customerSurname;
 
+    public Customer(String customerName, String customerSurname) {
+        this.customerName = customerName;
+        this.customerSurname = customerSurname;
+    }
+
     public String getCustomerName() {
         return customerName;
     }
